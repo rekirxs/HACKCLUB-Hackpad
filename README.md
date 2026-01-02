@@ -32,23 +32,4 @@ This repository contains the design files, a simple KMK firmware, and placeholde
 - `firmware/` — KMK firmware and `keymap.py`
 - `docs/images/` — project screenshots used by this README
 
-**Build & flash (quick)**
-1. Assemble PCB and solder components following the schematic in `pcb/`.
-2. To program the Seeed XIAO RP2040 with KMK, install KMK according to its docs on your host system and copy `firmware/keymap.py` to the device using one of these methods:
 
-	 - Thonny: open the board and copy `keymap.py` to the device filesystem.
-	 - `mpremote`:
-
-		 ```powershell
-		 mpremote connect serial run firmware\keymap.py
-		 ```
-
-	 - If your workflow requires a UF2, build the firmware binary and flash according to the KMK/board instructions.
-
-**Usage**
-- The encoder controls system volume (rotate) and mute (press). The OLED displays current layer and a volume indicator when available. Adjust pins in `firmware/keymap.py` if your PCB routing differs.
-
-**Files to replace**
-- Replace the placeholder images in `docs/images/`, `cad/`, and `pcb/` with your final screenshots to have them show up on GitHub.
-
-If you want, I can also replace the placeholder image files with the attachments and push them. Tell me to proceed and I'll add the four images and push a commit.
